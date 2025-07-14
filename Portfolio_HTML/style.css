@@ -6,19 +6,24 @@
 body{
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #1f242d;
+    color: #ffffff;
 }
 .navbar{
+    position: fixed;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #004466;
+
+    background-color: slateblue;
     color: white;
     padding: 1rem 2rem;
     position: sticky;
+    z-index: 100;
     
 }
+a
 .navbar .logo{
     font-size: 1.5rem;
 }
@@ -33,7 +38,7 @@ body{
 }
 .section h2 {
     margin-bottom: 1rem;
-    color: #004466;
+    color: #ffffff;
 }
 
 .skills-list{
@@ -58,7 +63,7 @@ body{
 .project-card {
     background: #fff;
     padding: 1rem;
-    border-left: 5px solid #004466;
+    border-left: 5px solid #1f242d;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
@@ -68,7 +73,7 @@ body{
 }
 
 .project-card a {
-    color: #004466;
+    color: #1f242d;
     text-decoration: none;
     font-weight: bold;
 }
