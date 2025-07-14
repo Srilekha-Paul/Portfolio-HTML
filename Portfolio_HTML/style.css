@@ -9,3 +9,15 @@ body{
     background-color: #f9f9f9;
     color: #333;
 }
+.navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ 
+    background-color: #004466;
+    color: white;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+
+}
