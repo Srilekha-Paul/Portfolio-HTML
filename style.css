@@ -126,3 +126,21 @@ body{
     margin-top: 1rem;
     font-size: 0.95rem;
 }
+/* Footer */
+footer{
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+
+}
+footer .socials a{
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+
+}
+footer .socials a:hover{
+    text-decoration: underline;
+}
