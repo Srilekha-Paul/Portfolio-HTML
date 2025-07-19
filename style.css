@@ -100,3 +100,29 @@ body{
     flex-direction: column;
     gap: 1rem;
 }
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-form button {
+    background-color: #004466;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #006699;
+}
+
+.address {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
