@@ -6,7 +6,7 @@
 body{
     font-family: 'Segoe UI', sans-serif;
     line-height: 1.6;
-    background-color: #c0117d7c;
+    background-color:rgb(211, 208, 208);
     color: black;
 }
 .navbar{
@@ -15,44 +15,62 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: slateblue;
+    background-color: #004466;
     color: black;
     padding: 25px 9%;
     z-index: 100;
+
     
 }
-a
-.navbar .logo{
-    font-size: 30px;
-    font-weight: 700;
+
+.navbar .logo {
+    font-size: 1.7rem;
 }
-.nav-links a:hover{
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.nav-links a:hover {
     text-decoration: underline;
 }
-.section{
-    padding: 3rem 2rem;
-    width: 100%;
-    max-width: 900px;
 
+/* Sections */
+.section {
+    padding: 3rem 2rem;
+    max-width: 900px;
+    margin: auto;
 }
+
 .section h2 {
     margin-bottom: 1rem;
-    color: black;
+    color: #004466;
 }
 
-.skills-list{
+/* Skills */
+.skills-list {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     gap: 1rem;
     padding-left: 0;
- 
 }
+
 .skills-list li {
     background-color: #ddeeff;
     padding: 0.5rem 1rem;
     border-radius: 5px;
 }
+
+/* Projects */
 .project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -60,9 +78,9 @@ a
 }
 
 .project-card {
-    background: #ddeeff;
+    background: #fff;
     padding: 1rem;
-    border-left: 5px solid #1f242d;
+    border-left: 5px solid #004466;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
 }
@@ -72,7 +90,57 @@ a
 }
 
 .project-card a {
-    color: #1f242d;
+    color: #004466;
     text-decoration: none;
     font-weight: bold;
+}
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+    padding: 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+.contact-form button {
+    background-color: #004466;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #006699;
+}
+
+.address {
+    margin-top: 1rem;
+    font-size: 0.95rem;
+}
+/* Footer */
+footer{
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 1.5rem 1rem;
+    margin-top: 3rem;
+
+}
+footer .socials a{
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+
+}
+footer .socials a:hover{
+    text-decoration: underline;
 }
