@@ -1,100 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Srilekha Paul - Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <header>
-        <nav class="navbar">
-            <h1 class="logo">Srilekha Paul</h1>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <!-- Scroll Progress Bar -->
+  <div id="progress-bar"></div>
 
-    <!-- About Me Section -->
-    <section class="section" id="about">
-        <h2>About Me</h2>
-        <p>
-            I am a dedicated and curious learner with a passion for <strong>web development</strong>, programming, and technology.
-            Currently pursuing my studies in Computer Science, I enjoy creating user-friendly websites, exploring data, and solving real-world problems through code.
-            My goal is to contribute to meaningful projects and continuously grow as a developer.
-        </p>
-    </section>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">MyPortfolio</h1>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="toggle-dark">🌙</button>
+      <!-- Hamburger Icon -->
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </nav>
+  </header>
 
-    <!-- Skills Section -->
-    <section class="section" id="skills">
-        <h2>Technologies</h2>
-        <ul class="skills-list">
-            <li>HTML & CSS</li>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>React (Basic)</li>
-            <li>PHP & MySQL</li>
-            <li>Git & GitHub</li>
-        </ul>
+  <!-- Overlay -->
+  <div id="overlay"></div>
 
-        <h2>Interests</h2>
-        <ul class="skills-list">
-            <li>Web Development</li>
-            <li>Open-source Projects</li>
-        </ul>
-    </section>
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <h2>Hello, I'm <span class="highlight">Srilekha Paul</span></h2>
+    <p class="typewriter">Frontend Developer </p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </section>
 
-    <!-- Projects Section -->
-    <section class="section" id="projects">
-        <h2>Projects</h2>
-        <div class="project-grid">
-            <div class="project-card">
-                <h3>Portfolio Website</h3>
-                <p>HTML-based portfolio site showcasing my skills.</p>
-                <a href="https://github.com/Srilekha-Paul/Portfolio-HTML" target="_blank">GitHub Link</a>
-            </div>
-            <div class="project-card">
-                <h3>To Do App</h3>
-                <p>Task management app using HTML, CSS & JavaScript.</p>
-                <a href="https://github.com/Srilekha-Paul/To-Do-App" target="_blank">GitHub Link</a>
-            </div>
-        </div>
-    </section>
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="assets/profile.jpg" alt="Profile" />
+      <p>I’m a passionate developer who loves building modern and interactive websites using HTML, CSS, and JavaScript.</p>
+    </div>
+  </section>
 
-    <!-- Contact Form Section -->
-    <section class="section" id="contact">
-        <h2>Get In Touch</h2>
-        <form class="contact-form">
-            <label for="name">Name</label>
-            <input type="text" id="name" placeholder="Your Name" required>
+  <!-- Skills -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="skill">HTML5</div>
+      <div class="skill">CSS3</div>
+      <div class="skill">JavaScript</div>
+      <div class="skill">Python</div>
+      <div class="skill">React</div>
+      <div class="skill">Git & GitHub</div>
+    </div>
+  </section>
 
-            <label for="email">Email</label>
-            <input type="email" id="email" placeholder="Your Email" required>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <img src="assets/project1.png" alt="Project 1" />
+        <h3>Project One</h3>
+        <p>Responsive landing page with modern design.</p>
+      </div>
+      <div class="project-card">
+        <img src="assets/project2.png" alt="Project 2" />
+        <h3>Project Two</h3>
+        <p>Interactive portfolio with animations.</p>
+      </div>
+    </div>
+  </section>
 
-            <label for="message">Message</label>
-            <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <form id="contact-form">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
 
-            <button type="submit">Send</button>
-        </form>
-        <p class="address">
-            Duttapulia, Nadia, West Bengal, India, PIN 741504 <br>
-            Email: <a href="mailto:srilekhapaul2003@gmail.com">srilekhapaul2003@gmail.com</a>
-        </p>
-    </section>
+  <!-- Back to Top -->
+  <button id="back-to-top">↑</button>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 Srilekha Paul</p>
-        <div class="socials">
-            <a href="https://github.com/Srilekha-Paul" target="_blank">GitHub</a>
-            <a href="#" target="_blank">LinkedIn</a>
-            <a href="mailto:srilekhapaul2003@gmail.com">Email</a>
-        </div>
-    </footer>
+  <footer>
+    <p>© 2025 Srilekha Paul | Built with ❤️</p>
+  </footer>
 </body>
 </html>
